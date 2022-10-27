@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  @media screen and (max-width: 576px) {
+    display: block;
+  }
+  &_button {
+    margin-left: 24px;
+    @media screen and (max-width: 576px) {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

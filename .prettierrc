@@ -1,0 +1,30 @@
+{
+  "semi": false,
+  "tabWidth": 2,
+  "printWidth": 84,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "jsxSingleQuote": true,
+  "bracketSpacing": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^assets/(.*)$",
+    "^hooks/(.*)$",
+    "^pages/(.*)$",
+    "^store/(.*)$",
+    "^components/(.*)$",
+    "^../(.*)",
+    "^./(.*)",
+    "(.css)$"
+  ],
+  "overrides": [
+    {
+      "files": ["*.js*","*.jsx*","*.ts*","*.tsx*"],
+      "options": {
+        "prettier.printWidth": 84
+      }
+    }
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

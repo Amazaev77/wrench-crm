@@ -1,0 +1,33 @@
+@import 'src/assets/colors';
+
+.profile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  @media screen and (max-width: 768px) {
+  }
+  &_icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 2px solid $white;
+    text-align: center;
+    padding-top: 10px;
+    & > svg {
+      width: 22px;
+      height: 24px;
+      & > path {
+        stroke: $white;
+      }
+    }
+  }
+  &_name {
+    color: $white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 16px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

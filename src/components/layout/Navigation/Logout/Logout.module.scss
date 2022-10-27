@@ -1,0 +1,16 @@
+@import '../../../../assets/colors';
+
+.logout {
+  display: flex;
+  padding-left: 32px;
+  cursor: pointer;
+  &_icon {
+    width: 32px;
+    margin-right: 16px;
+  }
+  &_text {
+    color: $black;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}

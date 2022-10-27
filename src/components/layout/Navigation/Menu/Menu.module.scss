@@ -1,0 +1,48 @@
+@import 'src/assets/colors';
+
+.menu {
+  &_title {
+    color: $black;
+    padding-left: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+  &_list {
+    list-style: none;
+    .item {
+      margin-bottom: 40px;
+      &_icon {
+        width: 32px;
+        text-align: center;
+        margin-right: 16px;
+      }
+      &_link,
+      &_link_active {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-left: 32px;
+        > span {
+          color: $black;
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+      &_link_active {
+        position: relative;
+        cursor: default;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: -2.5px;
+          background-color: $main-color;
+          width: 6px;
+          border-radius: 5px;
+          height: 37px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import 'src/assets/colors';
+
+.home {
+  padding: 32px 0 32px 32px;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 4px;
+    display: block;
+    &-track {
+      background: transparent;
+      &-piece:start {
+        background: transparent;
+        margin-top: 128px;
+      }
+    }
+    &-thumb {
+      background-color: $main-color;
+      border-radius: 5px;
+    }
+  }
+
+  &_title {
+    font-weight: 700;
+    font-size: 26px;
+    color: $black;
+  }
+  &_subtitle,
+  &_content {
+    font-weight: 500;
+    font-size: 20px;
+    color: $black;
+  }
+  &_subtitle {
+    margin: 16px 0 24px;
+  }
+  &_content {
+    padding-right: 32px;
+    &_link {
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import 'src/assets/colors';
+
+.wrapper {
+  overflow: hidden;
+  transition: height 250ms;
+  &.hide {
+    height: 70px !important;
+  }
+  .dropdown {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    cursor: pointer;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    &_icon {
+      width: 32px;
+      text-align: center;
+      margin-right: 16px;
+    }
+    &_arrow {
+      -webkit-transition: -webkit-transform 150ms ease-in-out;
+      -ms-transition: -ms-transform 150ms ease-in-out;
+      transition: transform 150ms ease-in-out;
+      transform: rotate(180deg);
+      &.open {
+        transform: rotate(0deg);
+      }
+    }
+    &_menu {
+      padding-left: 47px;
+      transition: opacity 180ms;
+      &.hide {
+        opacity: 0;
+      }
+    }
+    & > span {
+      color: $black;
+      font-weight: 600;
+      font-size: 20px;
+      flex: 1;
+    }
+  }
+}
